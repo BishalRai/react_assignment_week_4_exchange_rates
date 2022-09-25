@@ -10,9 +10,31 @@ const[rate,setRate] = useState(0);
 
 
   return (
-  <div>
 
-  </div>
+  //Structure of Page
+  <div>
+    <h2>Euro To Pound Converter</h2>
+      <form>
+        <div>
+        <div>
+          <label>Exchange Rate: </label>
+          <label>1 € = <output>{rate}</output> £</label>
+          
+        </div>
+          <label>Euro </label>
+          <input type = "number" step = ""
+          value ={eur} onChange = {e => setEur(e.target.value)}/>
+        </div>
+        <div>
+          <label>GBP : </label>
+          <output>{}</output>
+        </div>
+        <div>
+          <button>Convert</button>
+        </div>
+      </form>
+    </div>
+
   );
 }
 
